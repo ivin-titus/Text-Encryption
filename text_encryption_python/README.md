@@ -6,7 +6,7 @@
 
 For a complete understanding of this project, please refer to the [Main Documentation](https://github.com/ivin-titus/Text-Encryption/blob/master/README.md).
 
-<b> Desktop: [Download](https://www.mediafire.com/file/npikkymx3hleurt/Text_Encryption.apk/file)</b>
+<b> [Download](https://www.mediafire.com/file/npikkymx3hleurt/Text_Encryption.apk/file)</b>
 
 ### Usage:
 
