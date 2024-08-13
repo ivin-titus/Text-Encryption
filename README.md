@@ -39,7 +39,7 @@ This project is designed to encrypt and decrypt user input using various cipher 
 - The Advanced level can encrypt any type of text, including special symbols and emojis.
 - Use the same keys and levels to ensure correct decoding.
 - Key 1 should only have an integer value
-- Key 2 should be a String value that only includes alpha-numeric characters (A - Z, a - Z, 0 - 9)
+- Key 2 should be a String value that only includes alpha-numeric characters (A - Z, a - z, 0 - 9)
 
 ### Detailed Description of Cipher Levels:
 
@@ -112,4 +112,4 @@ In the digital age, data protection is paramount. Open communication over the in
 
 This project demonstrates the application of cipher algorithms to encrypt and decrypt text at different levels of complexity. It highlights the importance of data security in digital communications and offers a practical tool for enhancing privacy and protection. By exploring and implementing various encryption techniques, this project not only provides a functional application but also deepens the understanding of cryptographic principles and their real-world applications.
 
-<b> ©️ Ivin Techz </b>
+<b> ©️ Ivin Techz 2024</b>
