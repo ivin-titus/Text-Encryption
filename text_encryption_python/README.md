@@ -9,7 +9,6 @@ For a complete understanding of this project, please refer to the [Main Document
 <b> [Download Zip File](https://www.mediafire.com/file/npikkymx3hleurt/Text_Encryption.apk/file)</b>
 
 ### Usage:
-
 1. **Command Line Mode**:
     - Run the script `cipher_cli.py` directly from the command line.
     - Example command: `python cipher_cli.py <mode> <level> <key1> <key2>` (or `python3` on some devices).
@@ -17,6 +16,7 @@ For a complete understanding of this project, please refer to the [Main Document
 2. **Graphical User Interface (GUI)**:
     - Run the script `cipher_app.py` to launch the graphical application.
     - Example command: `python cipher_app.py`.
+Note: Make sure you're on project folder and terminal is opened there
 
 3. **Import into Other Python Projects**:
     - You can import the functionality into other Python projects.
