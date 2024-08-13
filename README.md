@@ -6,11 +6,11 @@ This project is designed to encrypt and decrypt user input using various cipher 
 <br>
 ### Download Links
 
-<b> <a href="https://download1321.mediafire.com/nlt9np0h4heghBkA13g8nfw3gsUT9Ox9JPFTXIBNpiXOHXSYt5hZ3uDwMmpcb25pHJ8PEse2QgtLVxJPMnNa13E14i5-ZpLkdt9wg1w14vq65C50TNLhFZDdFj_5JMU6glRzBFyKptz8VvrcqJIl-EnfJ4WfqCyurppyuzYJ0w/npikkymx3hleurt/Text+Encryption.apk" style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #007BFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Arial, sans-serif;">
+<b> <a href="https://www.mediafire.com/file/npikkymx3hleurt/Text_Encryption.apk/file" style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #007BFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Arial, sans-serif;">
     <span style="font-size: 24px; margin-right: 10px;">&#8681;</span> <b>Android</b>
 </a></b>
 
-<b> <a href="https://download1583.mediafire.com/76d1kmpelxvg0zSW09PDBuZgIVLgAnoisDPyXkwDzFme6ZwvACf6e5OxuySCnrBo2s4Uzm8lqtM0LSb-Vriam2ut_yD48S9tmCYiLyrdnF9hl4PLMMPGX3UgSMt8atGEI1jD5bSniuBcwFNG6a6k3D-fZU1pHlRpDRymRiTJcQ/g916kaqfe5rtsg2/text_encryption_python.zip" style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #007BFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Arial, sans-serif;">
+<b> <a href="https://www.mediafire.com/file/g916kaqfe5rtsg2/text_encryption_python.zip/file" style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #007BFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Arial, sans-serif;">
     <span style="font-size: 24px; margin-right: 10px;">&#8681;</span> <b>Desktop Edition (Python)</b>
 </a></b>
 <br> <br>
