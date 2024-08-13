@@ -1,4 +1,5 @@
 # Text Encryption - Flutter Edition
+<img src="logo_android.png" width="128" height="128" alt="text-encryption" align="right" />
 
 ### Read [Main Documentation](https://github.com/ivin-titus/Text-Encryption/blob/master/README.md) for more info
 
