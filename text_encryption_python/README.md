@@ -15,7 +15,7 @@ For a complete understanding of this project, please refer to the [Main Document
 
 2. **Graphical User Interface (GUI)**:
     - Run the script `cipher_app.py` to launch the graphical application.
-    - Example command: `python cipher_app.py`.
+    - Example command: `python cipher_app.py`.<br>
 Note: Make sure you're on project folder and terminal is opened there
 
 3. **Import into Other Python Projects**:
