@@ -2,15 +2,15 @@
 
 <img src="logo.jpeg" width="128" height="128" alt="text-encryption" align="right" />
 
-This project is designed to encrypt and decrypt user input using various cipher algorithms. It offers two primary modes and three levels of complexity to satisfy different encryption needs. I implimented this projects using <b>[Python](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> for Desktop OS and <b>[Flutter](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> for Smartphones. You're welcome to impliment it on any other languages or use it on your projects. Use algorithm on <b>[Python Edition](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> as reference. Don't forget to mention me on such cases.
+This project is designed to encrypt and decrypt user input using various cipher algorithms. It offers two primary modes and three levels of complexity to satisfy different encryption needs. I implimented this projects using <b>[Python](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> for Desktop OS and <b>[Flutter](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_flutter)</b> for Smartphones. You're welcome to impliment it on any other languages or use it on your projects. Use algorithm on <b>[Python Edition](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> as reference. Don't forget to mention me on such cases.
 <br>
 ### Download Links
 
-<b> <a href="https://download1321.mediafire.com/nlt9np0h4heghBkA13g8nfw3gsUT9Ox9JPFTXIBNpiXOHXSYt5hZ3uDwMmpcb25pHJ8PEse2QgtLVxJPMnNa13E14i5-ZpLkdt9wg1w14vq65C50TNLhFZDdFj_5JMU6glRzBFyKptz8VvrcqJIl-EnfJ4WfqCyurppyuzYJ0w/npikkymx3hleurt/Text+Encryption.apk" style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #007BFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Arial, sans-serif;">
+<b> <a href="https://github.com/ivin-titus/Text-Encryption/releases/download/apk/Text.Encryption.apk" style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #007BFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Arial, sans-serif;">
     <span style="font-size: 24px; margin-right: 10px;">&#8681;</span> <b>Android</b>
 </a></b>
 
-<b> <a href="https://download1583.mediafire.com/76d1kmpelxvg0zSW09PDBuZgIVLgAnoisDPyXkwDzFme6ZwvACf6e5OxuySCnrBo2s4Uzm8lqtM0LSb-Vriam2ut_yD48S9tmCYiLyrdnF9hl4PLMMPGX3UgSMt8atGEI1jD5bSniuBcwFNG6a6k3D-fZU1pHlRpDRymRiTJcQ/g916kaqfe5rtsg2/text_encryption_python.zip" style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #007BFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Arial, sans-serif;">
+<b> <a href="https://github.com/ivin-titus/Text-Encryption/releases/download/py/text_encryption_python.zip" style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #007BFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Arial, sans-serif;">
     <span style="font-size: 24px; margin-right: 10px;">&#8681;</span> <b>Desktop Edition (Python)</b>
 </a></b>
 <br> <br>
@@ -29,6 +29,7 @@ This project is designed to encrypt and decrypt user input using various cipher 
 - **Normal**: 
     - Requires two keys (one integer and one string) [ASCII].
     - Suitable for encoding normal text (letters only).
+      
 - **Advanced**: 
     - Requires three keys (one integer, one string, and one secret key derived from the others) [UNICODE].
     - Suitable for encoding complex text, including special symbols and emojis.
@@ -37,6 +38,8 @@ This project is designed to encrypt and decrypt user input using various cipher 
 - Simple and Normal levels can only encrypt simple letters and do not encode special symbols or emojis.
 - The Advanced level can encrypt any type of text, including special symbols and emojis.
 - Use the same keys and levels to ensure correct decoding.
+- Key 1 should only have an integer value
+- Key 2 should be a String value that only includes alpha-numeric characters (A - Z, a - Z, 0 - 9)
 
 ### Detailed Description of Cipher Levels:
 
@@ -55,7 +58,7 @@ This project is designed to encrypt and decrypt user input using various cipher 
 - **Encryption**:
   - Uses two keys: an integer and a string.
   - Shifts each character's ASCII value by the integer key.
-  - Applies a secondary transformation using the string key.
+  - Applies a secondary transformation using the string key. 
 
 - **Decryption**:
   - Reverses the string key transformation.
@@ -108,3 +111,5 @@ This project is designed to encrypt and decrypt user input using various cipher 
 In the digital age, data protection is paramount. Open communication over the internet poses risks of data breaches. Encryption methods, such as ciphers, are essential for securing data transmission. This project implements a customized version of cipher encryption to enhance data and communication security.
 
 This project demonstrates the application of cipher algorithms to encrypt and decrypt text at different levels of complexity. It highlights the importance of data security in digital communications and offers a practical tool for enhancing privacy and protection. By exploring and implementing various encryption techniques, this project not only provides a functional application but also deepens the understanding of cryptographic principles and their real-world applications.
+
+<b> ©️ Ivin Techz </b>

@@ -6,6 +6,12 @@
 
 For a complete understanding of this project, please refer to the [Main Documentation](https://github.com/ivin-titus/Text-Encryption/blob/master/README.md).
 
+### Demo
+
+<img src="demo_python.png" width="960" height="540" alt="text-encryption" align="center" />
+<br>
+<b>©️ Ivin Techz 2024 </b>
+
 ### Usage:
 
 1. **Command Line Mode**:
