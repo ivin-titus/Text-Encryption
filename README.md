@@ -2,7 +2,7 @@
 
 <img src="logo.jpeg" width="128" height="128" alt="text-encryption" align="right" />
 
-This project is designed to encrypt and decrypt user input using various cipher algorithms. It offers two primary modes and three levels of complexity to satisfy different encryption needs. I implimented this projects using <b>[Python](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> for Desktop OS and <b>[Flutter](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> for Smartphones. You're welcome to impliment it on any other languages or use it on your projects. Use algorithm on <b>[Python Edition](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> as reference. Don't forget to mention me on such cases.
+This project is designed to encrypt and decrypt user input using various cipher algorithms. It offers two primary modes and three levels of complexity to satisfy different encryption needs. I implimented this projects using <b>[Python](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> for Desktop OS and <b>[Flutter](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_flutter)</b> for Smartphones. You're welcome to impliment it on any other languages or use it on your projects. Use algorithm on <b>[Python Edition](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> as reference. Don't forget to mention me on such cases.
 <br>
 ### Download Links
 
