@@ -34,11 +34,10 @@ jobs:
       - name: Create Windows installer
         run: |
           $outputDir = 'text_encryption_flutter/build/windows/runner/Release'
-          $outputFile = 'text_encryption_flutter/build/windows/runner/Release/text_encryption.exe'
           & 'C:\Program Files\Inno Setup 6\ISCC.exe' 'path_to_inno_setup_script.iss'
         working-directory: text_encryption_flutter
 
-      - name: Upload Windows build artifact
+      - name: Upload Windows installer
         uses: actions/upload-artifact@v3
         with:
           name: windows-installer
@@ -105,11 +104,10 @@ jobs:
       - name: Create Linux .tar.gz
         run: |
           cd text_encryption_flutter/build/linux/x64/release/bundle
-          tar -czvf text_encryption.tar.gz text_encryption
+          tar -czvf text_encryption.tar.gz .
 
       - name: Upload Linux .tar.gz
         uses: actions/upload-artifact@v3
         with:
           name: linux-tarball
           path: text_encryption_flutter/build/linux/x64/release/bundle/text_encryption.tar.gz
-
