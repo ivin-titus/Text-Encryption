@@ -1,0 +1,35 @@
+name: Flutter Build Windows
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build-windows:
+    name: Build Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Checkout code
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.19.2' # Specify your Flutter version here
+      - name: Install Dependencies
+        run: |
+          choco install cmake --installargs '"ADD_CMAKE_TO_PATH=System"' # Install CMake
+          choco install ninja # Install Ninja build system
+          choco install visualstudio2019buildtools --version=16.0 --package-parameters "--add Microsoft.VisualStudio.Workload.MSBuildTools" # Install MS Build Tools
+      - run: flutter pub get
+        working-directory: text_encryption_flutter
+      - run: flutter build windows
+        working-directory: text_encryption_flutter
+      - name: Upload Windows build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: windows-build
+          path: text_encryption_flutter/build/windows/runner/Release/*
