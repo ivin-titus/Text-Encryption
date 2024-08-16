@@ -19,9 +19,9 @@ jobs:
         with:
           flutter-version: '3.10.6'
       - run: flutter pub get
-        working-directory: flutter_files
+        working-directory: text_encryption_flutter
       - run: flutter build macos
-        working-directory: flutter_files
+        working-directory: text_encryption_flutter
       - name: Upload macOS build artifact
         uses: actions/upload-artifact@v3
         with:
