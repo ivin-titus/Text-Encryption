@@ -64,7 +64,8 @@ jobs:
       - name: Create macOS .dmg
         run: |
           brew install create-dmg
-          create-dmg 'text_encryption_flutter/build/macos/Build/Products/Release/text_encryption.app' $HOME/text_encryption.dmg
+          create-dmg 'text_encryption_flutter/build/macos/Build/Products/Release/text_encryption.app' \
+          --out="$HOME/text_encryption.dmg"
 
       - name: Upload macOS .dmg
         uses: actions/upload-artifact@v3
@@ -104,7 +105,7 @@ jobs:
       - name: Create Linux .tar.gz
         run: |
           cd text_encryption_flutter/build/linux/x64/release/bundle
-          tar -czvf text_encryption.tar.gz .
+          tar --warning=no-file-changed -czvf text_encryption.tar.gz .
 
       - name: Upload Linux .tar.gz
         uses: actions/upload-artifact@v3
