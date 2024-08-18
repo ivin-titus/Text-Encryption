@@ -6,12 +6,19 @@
 
 For a complete understanding of this project, please refer to the [Main Documentation](https://github.com/ivin-titus/Text-Encryption/blob/master/README.md).
 
+<br>
+<br>
+
+---
+
 ### Demo
 
 <img src="demo_python.png" width="960" height="540" alt="text-encryption" align="center" />
+
 <br>
 <b>©️ Ivin Techz 2024 </b>
 
+---
 ### Usage:
 
 1. **Command Line Mode**:
@@ -27,6 +34,10 @@ For a complete understanding of this project, please refer to the [Main Document
     - Example import statement: `from cipher_cli import convert`.
     - Example usage in code: `convert(mode, level, text, key1, key2)`.
 
+<br>
+
+---
+
 ### Requirements:
 
 - **Python Interpreter**: Required to execute the scripts.
@@ -40,6 +51,10 @@ For a complete understanding of this project, please refer to the [Main Document
 
 - **Imported Usage in Other Projects**:
    - Ensure that the `Files` folder and the `cipher_cli.py` script are located in the same directory as the project where they will be used.
+
+<br>
+
+---
 
 ### Command Line Interface (CLI):
 
@@ -62,6 +77,10 @@ Example:
 ```bash
 python cipher_cli.py encrypt simple 4
 ```
+
+<br>
+
+---
 
 ### Graphical User Interface (GUI):
 
