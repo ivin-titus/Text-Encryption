@@ -34,7 +34,6 @@ For a complete understanding of this project, please refer to the [Main Document
     - Example import statement: `from cipher_cli import convert`.
     - Example usage in code: `convert(mode, level, text, key1, key2)`.
 
-<br>
 
 ---
 
@@ -51,8 +50,6 @@ For a complete understanding of this project, please refer to the [Main Document
 
 - **Imported Usage in Other Projects**:
    - Ensure that the `Files` folder and the `cipher_cli.py` script are located in the same directory as the project where they will be used.
-
-<br>
 
 ---
 
@@ -77,8 +74,6 @@ Example:
 ```bash
 python cipher_cli.py encrypt simple 4
 ```
-
-<br>
 
 ---
 
