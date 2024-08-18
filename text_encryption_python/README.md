@@ -4,7 +4,7 @@
 
 ### Overview
 
-For a complete understanding of this project, please refer to the [Main Documentation](https://github.com/ivin-titus/Text-Encryption/blob/master/README.md).
+For a complete understanding of this project, please refer to the **[Main Documentation](https://github.com/ivin-titus/Text-Encryption/blob/master/README.md)**.
 
 <br>
 <br>
