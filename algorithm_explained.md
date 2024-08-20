@@ -53,8 +53,7 @@ R → O
 ```
 
 - **Decrypted Word:** "HELLO"
----
-<br>
+##
 
 ## **On Normal Level Encryption** 
 
@@ -126,9 +125,7 @@ H  E  L  L  O  →  K  I  O  Q  S
 
 - **Decrypted Word:** "HELLO"
 
-<br>
-
----
+##
 
 ## **On Advanced Level Encryption**
 
@@ -190,9 +187,7 @@ To decrypt, shift each character in the encrypted text backward by subtracting t
 
 - **Decrypted Text:** "HELLO"
 
-<br>
-
----
+##
 ## **Conclusion**
 
 In this guide, we examined various methods for encrypting and decrypting text to protect information. Each technique follows the same core principle: transforming text into an unreadable format with a key and then reverting it back to its original form using the same key.
