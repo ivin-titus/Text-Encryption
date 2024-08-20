@@ -13,5 +13,5 @@ Because of some packaging restrictions, it's python edition can't directly run w
 
 ### Demo
 <img src="demo_android.png" width="360" height="760" alt="text-encryption" align="center" />
-<br>
+
 <b>©️ Ivin Techz 2024</b>
