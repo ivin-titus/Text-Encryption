@@ -74,7 +74,7 @@ Example:
 python cipher_cli.py encrypt simple 4
 ```
 
----
+##
 
 ### Graphical User Interface (GUI):
 
