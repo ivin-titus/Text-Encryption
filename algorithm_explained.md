@@ -194,7 +194,7 @@ To decrypt, shift each character in the encrypted text backward by subtracting t
 
 In this guide, we examined various methods for encrypting and decrypting text to protect information. Each technique follows the same core principle: transforming text into an unreadable format with a key and then reverting it back to its original form using the same key.
 
-- **Basic Caesar Cipher (On Simple Level)**: This straightforward method shifts characters in the text by a fixed number of positions. However, it has a significant limitation—it can be easily **[bruteforced]((https://en.wikipedia.org/wiki/Brute-force_attack))** due to its single key and limited number of possible shifts.
+- **Basic Caesar Cipher (On Simple Level)**: This straightforward method shifts characters in the text by a fixed number of positions. However, it has a significant limitation—it can be easily **[bruteforced](https://en.wikipedia.org/wiki/Brute-force_attack)** due to its single key and limited number of possible shifts.
   
 
 - **Customized Encryption (On Normal level)**: To address the shortcomings of the Caesar cipher, a more advanced approach involves using multiple keys—a numerical key and a string key. This greatly reduces the likelihood of successful brute-force attacks.
