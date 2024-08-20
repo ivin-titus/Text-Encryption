@@ -1,8 +1,10 @@
 # **Text Encryption - Algorithm Explaination**
 
-This is the algorithm level explaination of this project for further developments.
-This project basically have `3 levels` of `encryption` and `decryption` and it includes `Simple`, `Normal` and `Advanced`. It basically uses **Caesar ciphers** for **[alphabet shifting](https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/shift-cipher)**. I implimented it's more secured versions which have 2 - 3 keys and it **also works with [Unicode Characters](https://en.wikipedia.org/wiki/Unicode)**. Usually, pure Caeser cipher algoriths have only one key and it works with [ASCII Characters](https://www.techtarget.com/whatis/definition/ASCII-American-Standard-Code-for-Information-Interchange#:~:text=Characters%20in%20ASCII%20encoding%20include,use%20with%20teletype%20printing%20terminals.)
+This document provides a detailed explanation of the encryption and decryption algorithms used in this project, which offers three levels of security: Simple, Normal, and Advanced. The core technique employed is the **[Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher)**, known for its method of **[alphabet shifting](https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/shift-cipher)**.
 
+Our implementation extends the traditional Caesar cipher by introducing enhanced security features, including multiple keys (both numerical and alphanumeric) and support for **[Unicode Characters](https://en.wikipedia.org/wiki/Unicode)**. Unlike standard Caesar ciphers that use a single key and are limited to **[ASCII Characters](https://www.techtarget.com/whatis/definition/ASCII-American-Standard-Code-for-Information-Interchange#:~:text=Characters%20in%20ASCII%20encoding%20include,use%20with%20teletype%20printing%20terminals.)**, our approach is designed to handle a broader range of characters, making it more robust and secure.
+
+This advanced approach not only increases the complexity of encryption but also ensures compatibility with a wide array of characters, thus significantly improving data protection.
 
 ## **On Simple Level Encryption**
 
