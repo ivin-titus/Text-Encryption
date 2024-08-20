@@ -15,6 +15,7 @@ For a complete understanding of this project, please refer to the **[Main Docume
 
 <img src="demo_python.png" width="960" height="540" alt="text-encryption" align="center" />
 
+<br>
 <b>©️ Ivin Techz 2024 </b>
 
 ##
@@ -74,7 +75,7 @@ Example:
 python cipher_cli.py encrypt simple 4
 ```
 
-##
+---
 
 ### Graphical User Interface (GUI):
 
