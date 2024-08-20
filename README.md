@@ -4,8 +4,7 @@
 
 This project is designed to encrypt and decrypt user input using various cipher algorithms. It offers two primary modes and three levels of complexity to satisfy different encryption needs. I implimented this projects using <b>[Python](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> for Desktop OS and <b>[Flutter](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_flutter)</b> for Smartphones. You're welcome to impliment it on any other languages or use it on your projects. Use algorithm on <b>[Python Edition](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_python)</b> and **[Algorithm Explaination](algorithm_explained.md)** as reference. Don't forget to mention me on such cases.
 
-
----
+##
 
 ### Download Links
 
@@ -16,9 +15,8 @@ This project is designed to encrypt and decrypt user input using various cipher 
 <b> <a href="https://github.com/ivin-titus/Text-Encryption/releases/download/py/text_encryption_python.zip" style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #007BFF; border-radius: 5px; text-align: center; text-decoration: none; font-family: Arial, sans-serif;">
     <span style="font-size: 24px; margin-right: 10px;">&#8681;</span> <b>Desktop Edition (Python)</b>
 </a></b>
-<br> 
 
----
+##
 
 ### Details about this project
 
@@ -47,7 +45,7 @@ This project is designed to encrypt and decrypt user input using various cipher 
 - Key 1 should only have an integer value
 - Key 2 should be a String value that only includes alpha-numeric characters (A - Z, a - z, 0 - 9)
 
----
+##
 
 ### Detailed Description of Cipher Levels:
 
@@ -83,7 +81,7 @@ This project is designed to encrypt and decrypt user input using various cipher 
   - Reverses the transformations using the same keys.
   
 
----
+##
 
 ### Example Usage Scenarios:
 
@@ -105,7 +103,7 @@ This project is designed to encrypt and decrypt user input using various cipher 
    - Encrypted Text: Complex Unicode string
    - Decrypted Text: "hello 😊"
 
----
+##
 
 ### Research and Skills:
 
@@ -114,14 +112,14 @@ This project is designed to encrypt and decrypt user input using various cipher 
 - **Cipher Algorithms**: Gained a deeper understanding of implementing cipher algorithms, which improved problem-solving skills and bridged the gap between ideas and implementation.
 - **Testing Methods**: Explored new testing methods to ensure the robustness of the application.
 
----
+##
 
 ### Reason of why i re-implimented it on <b>[Flutter](https://github.com/ivin-titus/Text-Encryption/tree/master/text_encryption_flutter)</b>
 - Python packages like `customtkinter` and `pyperclip` are mainly made for Desktop OS which have a GUI like MacOS, Ubuntu (or any other linux), Windows etc
 - I faced some glitches when i ran it on android using an app called `pyroid`.
 - I want everything perfect, so i re-implimented the code on `Dart` - the programming language used on `Flutter` and it have more flexibility on Smartphones  
 
----
+##
 
 ### Conclusion:
 
