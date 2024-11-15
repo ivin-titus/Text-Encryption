@@ -24,16 +24,24 @@ jobs:
           export PATH="$PWD/flutter/bin:$PATH"
           flutter --version
 
+      # Change to the Flutter project directory
+      - name: Change directory to Flutter project
+        working-directory: text_encryption_flutter
+        run: echo "Changed directory to text_encryption_flutter"
+
       # Enable web support
       - name: Enable web support
+        working-directory: text_encryption_flutter
         run: flutter config --enable-web
 
       # Get Flutter dependencies
       - name: Install dependencies
+        working-directory: text_encryption_flutter
         run: flutter pub get
 
       # Build the Flutter web project
       - name: Build for web
+        working-directory: text_encryption_flutter
         run: flutter build web
 
       # Upload build artifacts
@@ -41,4 +49,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: flutter-web-build
-          path: build/web
+          path: text_encryption_flutter/build/web
