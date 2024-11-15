@@ -1,0 +1,42 @@
+name: Build Flutter Web
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build-web:
+    name: Build Flutter Web
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Flutter
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: stable
+
+      # Enable web support
+      - name: Enable web support
+        run: flutter config --enable-web
+
+      # Get Flutter dependencies
+      - name: Install dependencies
+        run: flutter pub get
+
+      # Build the Flutter web project
+      - name: Build for web
+        run: flutter build web
+
+      # Upload build artifacts
+      - name: Upload web build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: flutter-web-build
+          path: build/web
