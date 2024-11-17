@@ -1,4 +1,4 @@
-name: Build Flutter Web
+name: Build Flutter Web Version
 
 on:
   push:
@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+      # Step 1: Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Install Flutter manually
+      # Step 2: Install Flutter manually
       - name: Install Flutter
         run: |
           git clone https://github.com/flutter/flutter.git -b stable
@@ -24,29 +24,37 @@ jobs:
           export PATH="$PWD/flutter/bin:$PATH"
           flutter --version
 
-      # Change to the Flutter project directory
+      # Step 3: Change directory to the Flutter project folder
       - name: Change directory to Flutter project
         working-directory: text_encryption_flutter
         run: echo "Changed directory to text_encryption_flutter"
 
-      # Enable web support
+      # Step 4: Enable web support
       - name: Enable web support
         working-directory: text_encryption_flutter
         run: flutter config --enable-web
 
-      # Get Flutter dependencies
+      # Step 5: Install dependencies
       - name: Install dependencies
         working-directory: text_encryption_flutter
         run: flutter pub get
 
-      # Build the Flutter web project
-      - name: Build for web
+      # Step 6: Build the web version
+      - name: Build Flutter Web
         working-directory: text_encryption_flutter
-        run: flutter build web
+        run: flutter build web --web-renderer html
 
-      # Upload build artifacts
-      - name: Upload web build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: flutter-web-build
-          path: text_encryption_flutter/build/web
+      # Step 7: Copy the build output to the web folder
+      - name: Copy Build to Web Folder
+        run: |
+          mkdir -p text_encryption_flutter/web
+          cp -r text_encryption_flutter/build/web/* text_encryption_flutter/web/
+
+      # Step 8 (Optional): Commit and push changes
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add text_encryption_flutter/web
+          git commit -m "Add built web version to web folder"
+          git push
