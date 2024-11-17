@@ -1,59 +1,347 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <title>Text Encryption</title>
+  <link rel="icon" href="./icons/logo.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="cipher_text_converter_flutter">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    :root {
+      --primary-gradient: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      --glass-bg: rgba(255, 255, 255, 0.1);
+      --glass-border: rgba(255, 255, 255, 0.2);
+      --shadow-color: rgba(0, 0, 0, 0.3);
+      --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      --border-radius: 20px;
+      --glow-color: rgba(255, 255, 255, 0.5);
+      --frame-glow: rgba(255, 255, 255, 0.3);
+      
+      /* Social Media Colors */
+      --github-color: #333;
+      --instagram-color: #e4405f;
+      --email-color: #ea4335;
+      --linkedin-color: #0077b5;
+      --twitter-color: #000000;
+      --youtube-color: #ff0000;
+    }
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #170827; /* Dark blue color */
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
 
-  <title>cipher_text_converter_flutter</title>
-  <link rel="manifest" href="manifest.json">
+    /* Main Container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      width: 100%;
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+    }
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2018899945";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+    /* Enhanced Header */
+    .header {
+      position: fixed;
+      top: 20px;
+      width: fit-content;
+      min-width: 400px;
+      max-width: 100%;
+      height: 80px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      border-radius: var(--border-radius);
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      --direction: -1;
+      padding: 0 35px;
+      opacity: 1;
+    }
+
+    .header:hover {
+      box-shadow: 0 0 20px var(--glow-color);
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      font-family: 'Poppins', sans-serif; /* Ensures consistency across the text */
+      font-weight: 700;
+      text-shadow: var(--text-shadow);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Enhanced Mobile Frame */
+    .mobile-frame {
+      width: 360px;
+      height: 840px;
+      border-radius: 30px;
+      border: 12px solid #000000;
+      box-shadow: 0 20px 40px var(--shadow-color);
+      overflow: hidden;
+      position: relative;
+      z-index: 5;
+      transition: box-shadow 0.3s ease;
+      margin: 20px 0;
+      background: #000;
+    }
+
+    .mobile-screen {
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .mobile-frame:hover {
+      box-shadow: 0 0 30px var(--frame-glow);
+    }
+
+    /* Frame hover effects with smooth fade */
+    .mobile-frame:hover ~ .header,
+    .mobile-frame:hover ~ .footer-container {
+      transform: translateY(calc(var(--direction) * 100px));
+      opacity: 0;
+    }
+
+    /* Enhanced Footer */
+    .footer-container {
+      position: fixed;
+      bottom: 15px;
+      width: fit-content;
+      min-width: 400px;
+      max-width: 100%;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      padding: 20px 35px;
+      text-align: center;
+      z-index: 10;
+      border-radius: var(--border-radius);
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      --direction: 1;
+      opacity: 1;
+    }
+
+    .footer-container:hover {
+      box-shadow: 0 0 20px var(--glow-color);
+    }
+
+    .copyright {
+      margin: 5px 0;
+      font-size: 1rem;
+      font-weight: 600;
+      opacity: 0.8;
+      text-shadow: var(--text-shadow);
+      white-space: nowrap;
+      font-family: 'Poppins', sans-serif; /* Ensures consistency across the text */
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      color: white;
+      font-family: 'Poppins', sans-serif; /* Ensures consistency across the text */
+      text-decoration: none;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .social-links a i {
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    /* Social Media Hover Effects */
+    .social-links a:hover {
+      transform: translateY(-5px);
+    }
+
+    .social-links a.github:hover {
+      background: var(--github-color);
+      box-shadow: 0 0 20px var(--github-color);
+    }
+
+    .social-links a.instagram:hover {
+      background: var(--instagram-color);
+      box-shadow: 0 0 20px var(--instagram-color);
+    }
+
+    .social-links a.email:hover {
+      background: var(--email-color);
+      box-shadow: 0 0 20px var(--email-color);
+    }
+
+    .social-links a.linkedin:hover {
+      background: var(--linkedin-color);
+      box-shadow: 0 0 20px var(--linkedin-color);
+    }
+
+    .social-links a.twitter:hover {
+      background: var(--twitter-color);
+      box-shadow: 0 0 20px var(--twitter-color);
+    }
+
+    .social-links a.youtube:hover {
+      background: var(--youtube-color);
+      box-shadow: 0 0 20px var(--youtube-color);
+    }
+
+    /* Loading Animation */
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--glass-bg);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 1s infinite linear;
+    }
+
+    @keyframes spin {
+      100% { transform: translate(-50%, -50%) rotate(360deg) }
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0% 50% }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 400px) {
+      .mobile-frame {
+        width: 300px;
+        height: 700px;
+        border-width: 10px;
+      }
+
+      .header {
+        padding: 0 25px;
+        min-width: 280px;
+        height: 60px;
+      }
+
+      .header h1 {
+        font-size: 1.4rem;
+      }
+
+      .footer-container {
+        font-family: 'Poppins', sans-serif; /* Ensures consistency across the text */
+        padding: 15px 25px;
+        min-width: 280px;
+      }
+
+      .social-links {
+        gap: 10px;
+      }
+
+      .social-links a {
+        width: 35px;
+        height: 35px;
+      }
+
+      .social-links a i {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+  <!-- Background Image -->
+  <div class="background-image"></div>
+
+  <div class="container">
+    <!-- Mobile Frame -->
+    <div class="mobile-frame">
+      <div class="loading" aria-label="Loading..."></div>
+      <iframe
+        class="mobile-screen"
+        src="flutter_web.html"
+        title="Text Encryption Web App"
+        onload="this.previousElementSibling.style.display='none'"
+      ></iframe>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Text Encryption: Web Edition</h1>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="copyright">© 2024 Ivin Techz</div>
+      <div class="social-links">
+        <a href="https://github.com/ivin-titus" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="github">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://instagram.com/ivin_titus" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:ivintitus@hotmail.com" aria-label="Email" class="email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ivin-titus-49b403297" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://x.com/ivin_titus_" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)" class="twitter">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@Ivin_Techz" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Font Awesome Kit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 </body>
 </html>
