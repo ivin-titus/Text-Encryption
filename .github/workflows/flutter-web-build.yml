@@ -6,9 +6,6 @@ on:
       - master
   pull_request:
 
-permissions:
-  contents: write
-
 jobs:
   build-web:
     name: Build Flutter Web
@@ -47,17 +44,14 @@ jobs:
         working-directory: text_encryption_flutter
         run: flutter build web --web-renderer html
 
-      # Step 7: Copy the build output to the web folder
-      - name: Copy Build to Web Folder
-        run: |
-          mkdir -p text_encryption_flutter/web
-          cp -r text_encryption_flutter/build/web/* text_encryption_flutter/web/
+      # Step 7: Create a zip of the build output
+      - name: Zip Build Folder
+        working-directory: text_encryption_flutter/build/web
+        run: zip -r web_build.zip .
 
-      # Step 8 (Optional): Commit and push changes
-      - name: Commit and push changes
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add text_encryption_flutter/web
-          git commit -m "Add built web version to web folder"
-          git push
+      # Step 8: Upload the zip as an artifact
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: flutter-web-build
+          path: text_encryption_flutter/build/web/web_build.zip
