@@ -1,7 +1,6 @@
 import sys
 from files import simple, normal, advanced
 
-
 def usage():
     print('''Usage : python filename.py mode level key1 key2[optional] ( if its command line operation )\n
     Allowed modes : encrypt , decrypt\n

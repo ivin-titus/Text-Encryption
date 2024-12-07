@@ -426,7 +426,7 @@ class _EncryptionFormState extends State<EncryptionForm> {
             child: Text('Copy to Clipboard'),
           ),
           SizedBox(height: 206.3), // Add some space between buttons
-          Text("©️ Ivin Techz 2024")
+          Text("©️ 2024 Ivin Titus")
         ],
       ),
     );

@@ -130,4 +130,4 @@ In the digital age, data protection is paramount. Open communication over the in
 
 This project demonstrates the application of cipher algorithms to encrypt and decrypt text at different levels of complexity. It highlights the importance of data security in digital communications and offers a practical tool for enhancing privacy and protection. By exploring and implementing various encryption techniques, this project not only provides a functional application but also deepens the understanding of cryptographic principles and their real-world applications.
 
-<b> ©️ Ivin Techz 2024</b>
+<b> ©️ 2024 Ivin Titus</b>

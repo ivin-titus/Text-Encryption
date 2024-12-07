@@ -37664,7 +37664,7 @@ j.push(A.a4j(new A.ng(new A.bY(m,B.hC,B.b7),$.a9()),n,o,!0))
 j.push(A.dv(o,18,o))
 j.push(A.ajm(A.cA("Copy to Clipboard",o,o,o,o,o,o),new A.a81(p,a)))
 j.push(A.dv(o,206.3,o))
-j.push(A.cA("\xa9\ufe0f Ivin Techz 2024",o,o,o,o,o,o))
+j.push(A.cA("\xa9\ufe0f 2024 Ivin Titus",o,o,o,o,o,o))
 return new A.cx(B.C1,A.S5(j,B.bc,B.b2,B.d0),o)}}
 A.a86.prototype={
 $0(){var s=this.a,r=s.e

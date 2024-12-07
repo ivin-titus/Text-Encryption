@@ -9,7 +9,7 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__()
         
-        self.title("©️ Ivin Techz 2024")
+        self.title("©️ 2024 Ivin Titus")
         self.geometry("420x820")
         # self.iconbitmap("logo.ico")
 

@@ -203,4 +203,4 @@ In this guide, we examined various methods for encrypting and decrypting text to
 
 These algorithms demonstrates various ways to safeguard text using encryption keys. Understanding these techniques lays a strong foundation for further exploration into data security and privacy.
 
-**©️ Ivin Techz 2024** 
+**©️ 2024 Ivin Titus** 

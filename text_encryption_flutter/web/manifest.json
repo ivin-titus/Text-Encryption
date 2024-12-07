@@ -1,11 +1,11 @@
 {
-    "name": "cipher_text_converter_flutter",
-    "short_name": "cipher_text_converter_flutter",
+    "name": "Text Encryption and Decryption",
+    "short_name": "Text Encryption",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Cipher Text Encryption",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
